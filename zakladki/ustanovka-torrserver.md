@@ -11,7 +11,7 @@ description: >-
 
 Для начала подготовим сервер с **установленным пакетом TorrServer**. Это можно сделать **двумя** **разными способами**. Вы можете выбрать наиболее подходящий для Вас.
 
-### &#x20; 1.1 Покупка необходимого тарифа с предустановленным TorrServer <a href="#id-1.1-pokupka-neobkhodimogo-tarifa-s-predustanovlennym-torrserver" id="id-1.1-pokupka-neobkhodimogo-tarifa-s-predustanovlennym-torrserver"></a>
+#### &#x20; 1.1 Покупка необходимого тарифа с предустановленным TorrServer <a href="#id-1.1-pokupka-neobkhodimogo-tarifa-s-predustanovlennym-torrserver" id="id-1.1-pokupka-neobkhodimogo-tarifa-s-predustanovlennym-torrserver"></a>
 
 
 
@@ -39,7 +39,7 @@ description: >-
 Отлично. Теперь после активации вашего сервера вы сможете войти в панель TorrServer. Мы расскажем об этом подробнее **в пункте 2 («**&#x412;ход в панель TorrServe&#x72;**»).**
 {% endhint %}
 
-### 1.2 Переустановка существующего сервера с выполнением установки скрипта TorrServer:
+#### 1.2 Переустановка существующего сервера с выполнением установки скрипта TorrServer:
 
 Перейдём [**в раздел услуг**](https://my.aeza.net/services) и нажмём иконку троеточия справа от уже купленного сервера, выберем пункт **переустановить**
 
