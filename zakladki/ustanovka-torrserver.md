@@ -87,7 +87,7 @@ cat  /root/TorrServer.log
 
 После добавления торрент-файла вы можете **изменить название файла** в вашем сервере, а так же **поставить обложку** для большего комфорта в использовании **TorrServer**. Их наличие является не обязательным. Нажимаем кнопку **«Добавить».**
 
-<figure><img src="../.gitbook/assets/image (1).avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 Далее вы можете загрузить плейлист выбранного торрента на свой ПК:
 
