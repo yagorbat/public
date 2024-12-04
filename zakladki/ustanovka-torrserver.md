@@ -81,3 +81,12 @@ cat  /root/TorrServer.log
 
 <figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
+Далее перенести торрент-файл или вставить текст magnet-ссылки (содержания торрент файла).
+
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+
+
+
+После добавления торрент-файла вы можете **изменить название файла** в вашем сервере, а так же **поставить обложку** для большего комфорта в использовании **TorrServer**. Их наличие является не обязательным. Нажимаем кнопку **«Добавить».**
+
+<figure><img src="../.gitbook/assets/image (1).avif" alt=""><figcaption></figcaption></figure>
