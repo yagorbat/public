@@ -137,3 +137,39 @@ ExecStart = /opt/torrserver/torrserver -d /opt/torrserver -p 8090 --httpauth
 {% hint style="info" %}
 **Для отключения авторизации в веб-панели** достаточно удалить ключ "--httpauth" из строки: `ExecStart = /opt/torrserver/torrserver -d /opt/torrserver -p 8090 --httpauth` **После редактирования строка должна выглядеть таким образом:** `ExecStart = /opt/torrserver/torrserver -d /opt/torrserver -p 8090`
 {% endhint %}
+
+После внесения изменений и сохранения конфигурационного файла необходимо перезагрузить службу TorrServer:
+
+```
+systemctl daemon-reload
+service torrserver restart
+```
+
+### Обновление TorrServer
+
+В случае устаревания **установленной версии TorrServer** достаточно подключиться к вашему серверу по SSH и **выполнить следующую команду** **в консоли** сервера для автоматического обновления до актуальной версии:
+
+```
+dir="/opt/torrserver"
+bin="torrserver"
+systemctl stop torrserver.service
+rm -r ${dir}/${bin}
+dir="/opt/torrserver"
+mkdir -p ${dir}
+architecture=""
+case $(uname -m) in
+ i386) architecture="386" ;;
+ i686) architecture="386" ;;
+ x86_64) architecture="amd64" ;;
+ arm)  dpkg --print-architecture | grep -q "arm64" && architecture="arm64" || architecture="arm7" ;;
+esac
+url=$(curl --silent https://github.com/YouROK/TorrServer/releases/ | grep TorrServer-linux-${architecture} | head -1 | awk -F \" '{print $2}')
+wget -O ${dir}/${bin} https://github.com/${url}
+chmod +x ${dir}/${bin}
+systemctl start torrserver.service
+echo -e "\nTorrServer Online - update completed\n" >/dev/pts/0
+```
+
+{% hint style="success" %}
+Поздравляем, вы успешно установили и настроили на сервере панель TorrServer!
+{% endhint %}
