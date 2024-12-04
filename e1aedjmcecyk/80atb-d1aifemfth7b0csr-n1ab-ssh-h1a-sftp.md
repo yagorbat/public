@@ -34,6 +34,8 @@ description: >-
 **Для подключения по SFTP и SSH используются идентичные данные.**
 {% endhint %}
 
+>
+
 {% tabs %}
 {% tab title="PuTTY " %}
 ### **Порядок действий для подключения к VDS/VPS Linux по SSH** <a href="#poryadok-deistvii-dlya-podklyucheniya-k-vds-vps-linux-po-ssh" id="poryadok-deistvii-dlya-podklyucheniya-k-vds-vps-linux-po-ssh"></a>
