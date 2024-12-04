@@ -2,11 +2,11 @@
 
 * [Добро пожаловать!](README.md)
 
-## Битрикс
+## Веб
 
-* [Битрикс](bitriks/bitriks/README.md)
-  * [Готовый robots.txt для bitrix](bitriks/bitriks/gotovyi-robots.txt-dlya-bitrix.md)
+* [Битрикс](veb/bitriks/README.md)
+  * [Готовый robots.txt для bitrix](veb/bitriks/gotovyi-robots.txt-dlya-bitrix.md)
 
 ## Полезности
 
-* [🎦 Установка TorrServer](poleznosti/ustanovka-torrserver.md)
+* [🎦 Установка TorrServer](zakladki/ustanovka-torrserver.md)
