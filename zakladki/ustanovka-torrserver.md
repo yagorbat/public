@@ -118,3 +118,22 @@ systemctl daemon-reload
 service torrserver restart
 ```
 
+### Изменение порта для панели TorrServer и отключение авторизации в веб-панели
+
+Для изменения порта, на котором располагается веб-панель TorrServer достаточно изменить конфигурационный файл: /etc/systemd/system/torrserver.service Например, выполнив команду из консоли сервера:
+
+```
+nano /etc/systemd/system/torrserver.service
+```
+
+В данном файле в строке:
+
+```
+ExecStart = /opt/torrserver/torrserver -d /opt/torrserver -p 8090 --httpauth
+```
+
+вы можете указать любой удобный для вас порт вместо порта 8090 используемого по умолчанию.
+
+{% hint style="info" %}
+**Для отключения авторизации в веб-панели** достаточно удалить ключ "--httpauth" из строки: `ExecStart = /opt/torrserver/torrserver -d /opt/torrserver -p 8090 --httpauth` **После редактирования строка должна выглядеть таким образом:** `ExecStart = /opt/torrserver/torrserver -d /opt/torrserver -p 8090`
+{% endhint %}
