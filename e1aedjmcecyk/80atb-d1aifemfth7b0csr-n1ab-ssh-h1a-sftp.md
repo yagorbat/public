@@ -34,8 +34,6 @@ description: >-
 **Для подключения по SFTP и SSH используются идентичные данные.**
 {% endhint %}
 
->
-
 {% tabs %}
 {% tab title="PuTTY " %}
 ### **Порядок действий для подключения к VDS/VPS Linux по SSH** <a href="#poryadok-deistvii-dlya-podklyucheniya-k-vds-vps-linux-po-ssh" id="poryadok-deistvii-dlya-podklyucheniya-k-vds-vps-linux-po-ssh"></a>
@@ -62,14 +60,24 @@ description: >-
 
 Вам необходимо ввести следующие данные, которые были предоставлены после активации сервера:
 
-```
-IP-адрес — «‎Хост» в FileZilla.
+> **IP-адрес — «‎Хост» в FileZilla.**
+>
+> **Имя пользователя**
+>
+> **Пароль**
+>
+> **Порт**
 
-Имя пользователя
+{% hint style="warning" %}
+Стандартный порт для sFTP-подключений — **22**.
+{% endhint %}
 
-Пароль
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
-Порт
-```
+Следом нажимаем кнопку «‎**Быстрое соединение**».
+
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+
+Готово! Мы подключились к **серверу** и оказались в главной директории **/root**.
 {% endtab %}
 {% endtabs %}
