@@ -90,3 +90,31 @@ cat  /root/TorrServer.log
 После добавления торрент-файла вы можете **изменить название файла** в вашем сервере, а так же **поставить обложку** для большего комфорта в использовании **TorrServer**. Их наличие является не обязательным. Нажимаем кнопку **«Добавить».**
 
 <figure><img src="../.gitbook/assets/image (1).avif" alt=""><figcaption></figcaption></figure>
+
+Далее вы можете загрузить плейлист выбранного торрента на свой ПК:
+
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+Скачанный **.m3u файл** можно открыть [**в программе PotPlayer**](https://potplayer.daum.net/) и начать просмотр желаемого сериала, фильма или видео в лучшем качестве в прямом эфире.
+
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+
+### Изменение данных для авторизации в панели TorrServer
+
+**Для безопасности по умолчанию при установке скрипта предустановленного ПО TorrServer включена авторизация в панель управления по паролю.** Для изменения данных для входа в панель вы можете изменить содержимое файла на сервере: /opt/torrserver/accs.db Например, выполнив команду из консоли сервера:
+
+```
+nano /opt/torrserver/accs.db
+```
+
+Затем просто заменив данные о логине и пароле в формате {"admin": "password"} на желаемое имя пользователя и пароль:
+
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+
+Затем после сохранения файла необходимо перезагрузить службу TorrServer:
+
+```
+systemctl daemon-reload
+service torrserver restart
+```
+
