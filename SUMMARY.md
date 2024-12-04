@@ -7,7 +7,7 @@
 * [Битрикс](veb/bitriks/README.md)
   * [Готовый robots.txt для bitrix](veb/bitriks/gotovyi-robots.txt-dlya-bitrix.md)
 
-## Полезности
+## Полезно
 
-* [🎦 Установка TorrServer](zakladki/ustanovka-torrserver.md)
-* [📪 Как подключиться по SSH и SFTP](e1aedjmcecyk/80atb-d1aifemfth7b0csr-n1ab-ssh-h1a-sftp.md)
+* [🎦 Установка TorrServer](e1aekkbeb/ustanovka-torrserver.md)
+* [📪 Как подключиться по SSH и SFTP](e1aekkbeb/80atb-d1aifemfth7b0csr-n1ab-ssh-h1a-sftp.md)
